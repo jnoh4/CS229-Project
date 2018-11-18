@@ -4,9 +4,16 @@ import numpy as np
 import math
 import matplotlib
 import matplotlib.pyplot as plt
+import glob
 
-data_path = "C:/Users/Joseph/Google Drive/[Organized] Stanford/[18-19] Junior/Fall Quarter/CS 229/fMRI project/ICA_time_course-20181027T171839Z-001/ICA_time_course/"
-file_name = "NCANDA_S00033.txt"
+#data_path = "~/Documents/CS 229/fMRI_TC/ICA_time_course"
+#file_name = "NCANDA_S00033.txt"
+
+folder_path = '/~Documents/CS 229/fMRI_TC'
+pattern_match = '/*.txt'
+
+craddock = glob.glob(folder_path + 'craddock100_time_course' + pattern_match)
+ICA = glob.glob(folder_path + 'ICA_time_course' + pattern_match)
 
 num_bins = 269
 
