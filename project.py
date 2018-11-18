@@ -9,7 +9,7 @@ import glob
 #data_path = "~/Documents/CS 229/fMRI_TC/ICA_time_course"
 #file_name = "NCANDA_S00033.txt"
 
-folder_path = '/~Documents/CS 229/fMRI_TC'
+folder_path = '~/Documents/CS 229/fMRI_TC'
 pattern_match = '/*.txt'
 
 craddock = glob.glob(folder_path + 'craddock100_time_course' + pattern_match)
